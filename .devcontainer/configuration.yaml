@@ -3,16 +3,32 @@ default_config:
 logger:
   default: info
   logs:
-    custom_components.integration_blueprint: debug
+    custom_components.simple_thermostat: debug
 
 # If you need to debug uncommment the line below (doc: https://www.home-assistant.io/integrations/debugpy/)
 debugpy:
 
+input_number:
+  fake_target_sensor:
+    name: Temperature
+    min: 0
+    max: 35
+    step: 1
+    icon: mdi:thermometer
+
+
+input_boolean:
+  # input_boolean to simulate the heater entity switch. Only for development environment.
+  fake_heater_switch:
+    name: heater
+    icon: mdi:heater
+
+
 climate:
   - platform: simple_thermostat
-    name: "Thermostat Coin Jour"
-    heater: switch.integration_blueprint_switch
-    target_sensor: sensor.integration_blueprint_sensor
+    name: "Simple Thermostat"
+    heater: input_boolean.fake_heater_switch
+    target_sensor: input_number.fake_target_sensor
     min_temp: 17
     max_temp: 23
     ac_mode: false
