@@ -1,0 +1,26 @@
+default_config:
+
+logger:
+  default: info
+  logs:
+    custom_components.integration_blueprint: debug
+
+# If you need to debug uncommment the line below (doc: https://www.home-assistant.io/integrations/debugpy/)
+debugpy:
+
+climate:
+  - platform: simple_thermostat
+    name: "Thermostat Coin Jour"
+    heater: switch.integration_blueprint_switch
+    target_sensor: sensor.integration_blueprint_sensor
+    min_temp: 17
+    max_temp: 23
+    ac_mode: false
+    cold_tolerance: 0.3
+    hot_tolerance: 0.3
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    precision: 0.1

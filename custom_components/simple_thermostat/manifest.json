@@ -1,0 +1,8 @@
+{
+  "domain": "simple_thermostat",
+  "name": "Simple Thermostat",
+  "documentation": "https://www.home-assistant.io/integrations/generic_thermostat",
+  "dependencies": ["sensor", "switch"],
+  "codeowners": [],
+  "iot_class": "local_polling"
+}
