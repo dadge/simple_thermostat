@@ -1,19 +1,19 @@
 [![GitHub Release][releases-shield]][releases]
 [![GitHub Activity][commits-shield]][commits]
 [![License][license-shield]](LICENSE)
-
 [![hacs][hacsbadge]][hacs]
+<a href="https://www.buymeacoffee.com/dadge" target="_blank"><img src="https://img.shields.io/badge/Buy%20me%20a%20beer-%245-orange?style=for-the-badge&logo=buy-me-a-beer" /></a>
 
 _Component developed by using the amazing development template [blueprint][blueprint]._
 
 This custom component for Home Assistant is an upgrade of the generic thermostat which handles presets mode in a very simple way.
 
-## How Generic thermostat Behave with modes : 
+## How Generic thermostat behaves with modes : 
 Basically, the generic thermostat handle two preset mode : AWAY and NONE.
 When AWAY mode is set, the thermostat will set the tempaerature with the away temperature defined in the yaml configuration. 
 When NONE is selected, the temperature set is saved. Every time you set the mode as NONE, the temperature will be automatically set with the saved value. If you want to change the saved value, set the mode to NONE, set the deisred temperature, and that's it.
 
-## How Simple Thermostat Behave with modes and additional feature
+## How Simple Thermostat behaves with modes and additional feature
 Define by default all the modes defined in the climate specs : https://developers.home-assistant.io/docs/core/entity/climate#presets
 The simple thermostat reproduce the behavior of the mode NONE in generic thermostat and extend it to all the modes : 
 * Pick a mode
@@ -24,7 +24,7 @@ The simple thermostat reproduce the behavior of the mode NONE in generic thermos
 
 ## Minimum requirements
 
-* This implementstion can override or supersed the core generic thermostat
+* This implementstion can override or superseed the core generic thermostat
 
 ## Installation
 
@@ -70,14 +70,18 @@ Indeed, the schdeuler component porpose a management of the climate base on the 
 Starting here, I assume you have installed Simple Thermostat and Scheduler Component.
 
 In Scheduler, add a schedule : 
+
 ![image](https://user-images.githubusercontent.com/1717155/119146454-ee1a9d80-ba4a-11eb-80ae-3074c3511830.png)
 
 Choose "climate" group, choose one (or multiple) entity/ies, select "MAKE SCHEME" and click next : 
 (it is possible to choose "SET PRESET", but I prefer to use "MAKE SCHEME")
+
 ![image](https://user-images.githubusercontent.com/1717155/119147210-aa746380-ba4b-11eb-8def-479a741c0ba7.png)
 
 Set your mode scheme and save : 
+
 ![image](https://user-images.githubusercontent.com/1717155/119147784-2f5f7d00-ba4c-11eb-9de4-5e62ff5e71a8.png)
+
 In this example I set ECO mode during the night and the day when nobody's at home BOOST in the morning and COMFORT in the evening. 
 
 
