@@ -1,3 +1,9 @@
+[![GitHub Release][releases-shield]][releases]
+[![GitHub Activity][commits-shield]][commits]
+[![License][license-shield]](LICENSE)
+
+[![hacs][hacsbadge]][hacs]
+
 # Notice
 
 The component and platforms in this repository are not meant to be used by a
