@@ -46,8 +46,8 @@ The simple thermostat reproduce the behavior of the mode NONE in generic thermos
 
 1. Using the tool of choice open the directory (folder) for your HA configuration (where you find `configuration.yaml`).
 2. If you do not have a `custom_components` directory (folder) there, you need to create it.
-3. In the `custom_components` directory (folder) create a new folder called `pool_pump`.
-4. Download _all_ the files from the `custom_components/pool_pump/` directory (folder) in this repository.
+3. In the `custom_components` directory (folder) create a new folder called `simple_thermostat`.
+4. Download _all_ the files from the `custom_components/simple_thermostat/` directory (folder) in this repository.
 5. Place the files you downloaded in the new directory (folder) you created.
 6. Modify your `configuration.yaml` as explain below
 7. Restart Home Assistant
@@ -65,7 +65,7 @@ climate:
 ```
 
 If you had already configure a generic thermostat the onli changes you have to do are the following : 
-* platform must be changed from generic_thermostat to simpl_thermostat
+* platform must be changed from generic_thermostat to simple_thermostat
 * away_temp must be removed
 
 ## Even Better with Scheduler Component ! 
