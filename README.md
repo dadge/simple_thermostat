@@ -17,9 +17,15 @@ When NONE is selected, the temperature set is saved. Every time you set the mode
 Define by default all the modes defined in the climate specs : https://developers.home-assistant.io/docs/core/entity/climate#presets
 The simple thermostat reproduce the behavior of the mode NONE in generic thermostat and extend it to all the modes : 
 * Pick a mode
+
+![image](https://user-images.githubusercontent.com/1717155/119150574-dd6c2680-ba4e-11eb-80bb-a1164b0b9df4.png)
+
 * Set a temperature
+
+![image](https://user-images.githubusercontent.com/1717155/119150718-012f6c80-ba4f-11eb-9913-7c320bdce8cc.png)
+
 * That's it ! The temperature is saved for this mode.
-* Reproduce the previous step to update the temperatures    
+* Reproduce the previous step to update the temperatures / set other modes
 
 
 ## Minimum requirements
