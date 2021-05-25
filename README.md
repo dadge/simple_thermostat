@@ -2,7 +2,8 @@
 [![GitHub Activity][commits-shield]][commits]
 [![License][license-shield]](LICENSE)
 [![hacs][hacsbadge]][hacs]
-<a href="https://www.buymeacoffee.com/dadge" target="_blank"><img src="https://img.shields.io/badge/Buy%20me%20a%20beer-%245-orange?style=for-the-badge&logo=buy-me-a-beer" /></a>
+[![BuyMeCoffee][buymecoffeebadge]][buymecoffee]
+
 
 _Component developed by using the amazing development template [blueprint][blueprint]._
 
@@ -100,18 +101,16 @@ If you want to contribute to this please read the [Contribution guidelines](CONT
 ***
 
 [integration_blueprint]: https://github.com/custom-components/integration_blueprint
+[simple_thermostat]: https://github.com/dadge/simple_thermostat
 [buymecoffee]: https://www.buymeacoffee.com/dadge
-[buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=for-the-badge
-[commits-shield]: https://img.shields.io/github/commit-activity/y/custom-components/blueprint.svg?style=for-the-badge
-[commits]: https://github.com/custom-components/integration_blueprint/commits/master
+[buymecoffeebadge]: https://img.shields.io/badge/Buy%20me%20a%20beer-%245-orange?style=for-the-badge&logo=buy-me-a-beer
+[commits-shield]: https://img.shields.io/github/commit-activity/y/dadge/simple_thermostat.svg?style=for-the-badge
+[commits]: https://github.com/dadge/simple_thermostat/commits/master
 [hacs]: https://github.com/custom-components/hacs
 [hacsbadge]: https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge
-[discord]: https://discord.gg/Qa5fW2R
-[discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
-[exampleimg]: example.png
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
 [forum]: https://community.home-assistant.io/
-[license-shield]: https://img.shields.io/github/license/custom-components/blueprint.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/dadge/simple_thermostat.svg?style=for-the-badge
 [maintenance-shield]: https://img.shields.io/badge/maintainer-Joakim%20Sørensen%20%40ludeeus-blue.svg?style=for-the-badge
-[releases-shield]: https://img.shields.io/github/release/custom-components/blueprint.svg?style=for-the-badge
-[releases]: https://github.com/custom-components/integration_blueprint/releases
+[releases-shield]: https://img.shields.io/github/release/dadge/simple_thermostat.svg?style=for-the-badge
+[releases]: https://github.com/dadge/simple_thermostat/releases
