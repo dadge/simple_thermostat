@@ -250,7 +250,9 @@ class SimpleThermostat(ClimateEntity, RestoreEntity):
                 self._preset_mode = old_state.attributes.get(ATTR_PRESET_MODE)
             if not self._hvac_mode and old_state.state:
                 self._hvac_mode = old_state.state
-
+            for x in self.preset_modes:
+                if old_state.attributes.get(x + "_temp") is not None:
+                     self._attributes[x + "_temp"] = old_state.attributes.get(x + "_temp")
         else:
             # No previous state, try and restore defaults
             if self._target_temp is None:
@@ -261,6 +263,7 @@ class SimpleThermostat(ClimateEntity, RestoreEntity):
             _LOGGER.warning(
                 "No previously saved temperature, setting to %s", self._target_temp
             )
+
 
         # Set default state to off
         if not self._hvac_mode:
