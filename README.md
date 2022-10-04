@@ -7,7 +7,7 @@
 
 _Component developed by using the amazing development template [blueprint][blueprint]._
 
-### Warning ! this repo is not longer maintained, please consider Switch tho the new one : https://github.com/dadge/awesome_thermostat
+### Warning ! this repo is not longer maintained, please consider switch tho the new one : https://github.com/dadge/awesome_thermostat
 
 This custom component for Home Assistant is an upgrade of the generic thermostat which handles presets mode in a very simple way.
 
